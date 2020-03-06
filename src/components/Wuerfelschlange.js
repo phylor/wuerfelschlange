@@ -71,9 +71,18 @@ const ColoredDices = ({ initialDices, dices }) => (
       if (index <= dices.length - 1) {
         switch (dices[index].state) {
           case "hit":
-            return (
-              <Dice key={index} face={dices[index].face} color="#55cb55" />
-            );
+            if (
+              (index == 0 && initialDices[index].face != dices[index].face) ||
+              initialDices[index].state != "hit"
+            ) {
+              return (
+                <Dice key={index} face={dices[index].face} color="#8888cb" />
+              );
+            } else {
+              return (
+                <Dice key={index} face={dices[index].face} color="#55cb55" />
+              );
+            }
           case "skipped":
             return <Dice key={index} face={dices[index].face} color="#ddd" />;
           case "dropped":
@@ -82,7 +91,12 @@ const ColoredDices = ({ initialDices, dices }) => (
             );
           case "last":
             return (
-              <Dice key={index} face={dices[index].face} color="#5555cb" />
+              <Dice
+                key={index}
+                face={dices[index].face}
+                color="#000000"
+                fontColor="#ffffff"
+              />
             );
         }
       } else {
