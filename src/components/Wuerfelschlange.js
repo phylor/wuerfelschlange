@@ -231,6 +231,45 @@ const Wuerfelschlange = () => {
         </a>{" "}
         besprochen wurde.
       </p>
+      <p>
+        Man braucht dafür 40 Würfel. Diese würfelt man alle und reiht sie zu
+        einer Schlange auf.
+      </p>
+      <p>
+        Beginnend beim ersten Würfel, geht man so viele Würfel nach rechts
+        weiter wie die Augenzahl des ersten Würfels. Bei dem so abgezählten
+        Würfel geht man gleich vor: man nimmt die Augenzahl dieses Würfels und
+        geht so viele Würfel nach rechts. Diese Würfel sind unten grün markiert.
+      </p>
+      <p>
+        Irgendwann kommt man beim letzten Würfel an, mit dessen Augenzahl man
+        über die Schlange hinauszählen würde. Dieser Würfel ist der Endwürfel
+        (unten in schwarz) und alle Würfel rechts davon entfernt man aus der
+        Schlange (unten in rot, falls vorhanden).
+      </p>
+      <p>
+        Nun nimmt man den ersten Würfel aus der Schlange und würfelt nur diesen
+        erneut. Man geht dann mit der neu gewürfelten Augenzahl gleich vor wie
+        zu Beginn. Dann zeigt sich, dass die Wahrscheinlichkeit bei 40 Würfeln
+        sehr hoch ist wieder auf einem Würfel zu landen, auf dem man bereits
+        beim ersten Durchgang gelandet ist. Dadurch wiederholt sich die Sequenz
+        und man endet damit auch auf dem letzten Endwürfel. Zuunterst in der
+        Illustration sind jene Würfel blau markiert, die beim ersten Durchgang
+        nicht besucht wurden. Grün sind jene, die beim ersten Durchgang auch
+        bereits getroffen wurden. Dadurch wird ersichtlich wie sehr sich die
+        Sequenzen unterscheiden.
+      </p>
+      <p>
+        Für mehr Informationen die{" "}
+        <a href="http://minkorrekt.de/minkorrekt-folge-161-gesichtswurst/">
+          Minkorrekt Folge 161
+        </a>{" "}
+        nachhören oder die{" "}
+        <a href="http://docplayer.org/21039917-Was-fuer-ein-zufall-mathematischer-hintergrund-einiger-exponate.html">
+          verlinkte Quelle von Nicolas
+        </a>{" "}
+        lesen.
+      </p>
 
       <ContainerJustifyBetween>
         <h2>Initial</h2>
