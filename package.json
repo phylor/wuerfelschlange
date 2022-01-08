@@ -5,7 +5,6 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
     "parcel": "^2.1.1"
   }
 }
