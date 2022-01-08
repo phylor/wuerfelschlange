@@ -8,7 +8,7 @@ Experiment, dass im [Podcast Minkorrekt](http://minkorrekt.de) in der [Folge 161
 
 ```
 yarn global add parcel-bundler
-parcel index.html
+yarn run parcel index.html
 ```
 
 ## Build
