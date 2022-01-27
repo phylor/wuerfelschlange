@@ -7,12 +7,12 @@ Experiment, dass im [Podcast Minkorrekt](http://minkorrekt.de) in der [Folge 161
 ## Development
 
 ```
-yarn global add parcel-bundler
+yarn
 yarn run parcel index.html
 ```
 
 ## Build
 
 ```
-parcel build index.html -d docs/ --public-url './'
+parcel build index.html --dist-dir docs/ --public-url './'
 ```
